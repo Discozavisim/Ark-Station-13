@@ -124,7 +124,7 @@
 	if(victim.get_drunk_amount())
 		hemophage.set_drunk_effect(victim.get_drunk_amount())
 	if(victim.has_status_effect(/datum/status_effect/drugginess))
-		hemophage.set_drugginess(5 SECONDS)
+		hemophage.set_drugginess(15 SECONDS)
 
 	log_combat(hemophage, victim, "drained [drained_blood]u of blood from", addition = " (NEW BLOOD VOLUME: [victim.blood_volume] cL)")
 	victim.show_message(span_danger("[hemophage] drains some of your blood!"))
